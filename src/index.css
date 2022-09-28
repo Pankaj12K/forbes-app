@@ -1,0 +1,34 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "JetBrains Mono", monospace !important;
+}
+:root {
+  --purp-prim: #6e44e1;
+  --purp: #6835f6;
+  --gray: #8892b0;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.MuiTextField-root {
+  width: 100%;
+}
+
+.title {
+  font-size: clamp(3rem, -0.875rem + 8.333vw, 4rem);
+  color: white;
+  position: relative;
+}
+.title::before {
+  content: "";
+  position: absolute;
+  background-color: var(--purp);
+  width: 100%;
+  height: 2px;
+  bottom: 10px;
+}
